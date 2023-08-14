@@ -3,13 +3,19 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    font-size: .8rem;
+    font-size: .9rem;
+    padding: 12px 16px;
+    transition: .3s ease all;
+}
+
+.tw-followCard:hover{
+    background-color: #2b2b2b;
 }
 
 .tw-followCard-header{
     display: flex;
     align-items: center;
-    gap: 4px
+    gap: 10px
 }
 
 .tw-followCard-info {
@@ -22,8 +28,8 @@
 }
 
 .tw-followCard-avatar{
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 1000px;
 }
 
@@ -41,7 +47,7 @@
     border: 1px solid #bbb;
     background: transparent;
     color: #fff;
-    width: 130px;
+    width: 120px;
 }
 
 .tw-followCard-button.is-following:hover{

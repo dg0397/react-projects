@@ -1,5 +1,7 @@
 import "./App.css";
-import TwitterFollowCard from "./TwitterFollowCard";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
+import { ListTwitterFollowCard } from "./Components/ListTwitterFollowCard";
 
 const users = [
   {
@@ -27,15 +29,9 @@ const users = [
 const App = () => {
   return (
     <section id="App">
-      {users.map(({ userName, name, isFollowing }) => (
-        <TwitterFollowCard
-          key={userName}
-          username={userName}
-          initialIsFollowing={isFollowing}
-        >
-          {name}
-        </TwitterFollowCard>
-      ))}
+      <Header />
+      <ListTwitterFollowCard users={users} />
+      <Footer />
     </section>
   );
 };
